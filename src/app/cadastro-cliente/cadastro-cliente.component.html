@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Cliente</title>
+</head>
+<body>
+    <h1><b>Cadastro de Clientes</b></h1>
+    <form>
+        <input placeholder="Nome" type="text" id="nome" name="nome" required><br><br>
+
+
+        <input placeholder="Endereço" id="endereco" name="endereco" required><br><br>
+
+
+        <input placeholder="Telefone" type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required><br><br>
+
+
+        <input placeholder="CPF" type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required><br><br>
+
+
+        <input placeholder="Email" type="email" id="email" name="email" required><br><br>
+
+        <button (click)="concluirCadastroCliente()">Concluir Cadastro</button>
+
+
+
+    </form>
+</body>
+</html>

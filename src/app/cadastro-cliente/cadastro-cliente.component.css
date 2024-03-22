@@ -1,0 +1,46 @@
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    color: red
+}
+
+form{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+input{
+    width: 50%;
+    height: 50px;
+    border-color: black;
+    margin: 15px;
+    border-radius: 7px;
+    font-size: 30px;
+
+}
+
+::placeholder{
+    color: #000;
+}
+
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px;
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: large;
+    border-radius: 7px;
+    border-color: black;
+    transition: background-color 0.3s ease; /* Adicionando efeito de transição */
+}
+
+button:hover {
+    background-color: rgb(71, 1, 1); /* Alterando a cor de fundo quando o mouse está sobre o botão */
+}
+
