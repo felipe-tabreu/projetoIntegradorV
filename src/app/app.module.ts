@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 import { CadastroVeiculoComponent } from './cadastro-veiculo/cadastro-veiculo.component';
+import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
+import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 
 // Definição das rotas
 const routes: Routes = [
@@ -17,6 +19,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    CadastroUsuarioComponent,
+    LoginUsuarioComponent,
   ],
   imports: [
     BrowserModule,

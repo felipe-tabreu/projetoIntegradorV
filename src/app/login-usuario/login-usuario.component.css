@@ -1,0 +1,129 @@
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    
+h1{
+
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+
+
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+form{
+    text-align: center;
+    margin: 200px;
+}
+
+
+input{
+    width: 80%;
+    height: 40px;
+    margin: 20px;
+}
+
+button{
+    width: 80%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;}
+
+.principal{
+    border: 10px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.frase{
+
+width: 100%;
+background-color: rgb(255, 255, 255);
+flex: 1;
+margin: 50px;
+
+}
+
+
+
+.login{
+
+width: 100%;
+background-color: rgb(240, 240, 240);
+flex: 2;
+padding: 80px;
+
+
+}
+
+button:hover {
+    background-color: rgb(71, 1, 1); /* Alterando a cor de fundo quando o mouse está sobre o botão */
+}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+.frase{
+      
+      
+  display: none; /* Oculta a div frase em dispositivos móveis */
+    }
+
+
+
+    h1{
+
+        font-size: 80px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: red;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+    }
+    
+    form{
+        text-align: center;
+        margin: 200px;
+    }
+    
+    
+    input{
+        width: 90%;
+        height: 40px;
+        margin: 30px;
+    }
+    
+    button{
+        width: 80%;
+        height: 50px;
+        background-color: red;
+        color: white;
+        margin-top: 40px;
+        border-radius: 10px;}
+
+
+
+        
+
+  }
+  
+    
+  
+
+
