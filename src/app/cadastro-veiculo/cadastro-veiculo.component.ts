@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class CadastroVeiculoComponent {
 
-}
+  selectedMarca: string = '';
+  selectedModelo: string = '';
+  modelos: string[] = [];
+
+  atualizarModelos() {
+    if (this.selectedMarca === 'Fiat') {
+      this.modelos = ['Palio', 'Uno', 'Fiorino'];
+    } else if (this.selectedMarca === 'Chevrolet') {
+      this.modelos = ['Onix', 'Prisma', 'Cruze'];
+    } else {
+      this.modelos = [];
+    }
+  }
+
+
+
+  }
+
+
+

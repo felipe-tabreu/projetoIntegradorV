@@ -7,6 +7,9 @@ import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.co
 import { CadastroVeiculoComponent } from './cadastro-veiculo/cadastro-veiculo.component';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
+import { FraseLoginComponent } from './frase-login/frase-login.component';
+import { TelaLoginComponent } from './Telas/tela-login/tela-login.component';
+import { FormsModule } from '@angular/forms';
 
 // Definição das rotas
 const routes: Routes = [
@@ -21,11 +24,15 @@ const routes: Routes = [
     AppComponent,
     CadastroUsuarioComponent,
     LoginUsuarioComponent,
+    FraseLoginComponent,
+    TelaLoginComponent,
+    CadastroVeiculoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CadastroClienteComponent,
+    FormsModule,
     RouterModule.forRoot(routes) // Importa o módulo de roteamento e define as rotas
   ],
   providers: [],

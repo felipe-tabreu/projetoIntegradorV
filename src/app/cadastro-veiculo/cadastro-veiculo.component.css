@@ -1,46 +1,58 @@
 
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 80px;
-    font-weight: bolder;
+
+
+
+.cadVeiculo{
     text-align: center;
-    color: rgb(25, 0, 255)
+}
+
+.selecs{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.geral{
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+
+h1{
+    font-size: 80px;
+    color: red;
+    font-weight: bold;
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
 }
 
 form{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    margin: 30px;
 }
 
 input{
-    width: 50%;
+    border-radius: 5px;
+    width: 70%;
     height: 50px;
-    border-color: black;
-    margin: 15px;
-    border-radius: 7px;
-    font-size: 30px;
-
+    margin: 20px;
 }
 
-::placeholder{
-    color: #000;
-}
-
-
-button {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 50px;
-    width: 150px;
+select{
+    margin-left: 33%;
+    border-radius: 5px;
     height: 50px;
-    background-color: red;
-    color: white;
-    font-size: large;
-    border-radius: 7px;
-    border-color: black;
-    transition: background-color 0.3s ease; /* Adicionando efeito de transição */
+    display: flex;
+    text-align: center;
+    width: 600px; /* Defina a largura desejada */
+    padding: 10px;
 }
 
-button:hover {
-    background-color: rgb(71, 1, 1); /* Alterando a cor de fundo quando o mouse está sobre o botão */
+label{
+    margin-left: 33%;
 }
 
+button{
+width: 150px;
+height: 50px;
+border-radius: 5px;
+}

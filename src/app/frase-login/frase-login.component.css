@@ -5,6 +5,7 @@ h1{
     font-weight: bold;
     color: rgb(255, 0, 0);
 
+
 }
 
 p{
@@ -12,16 +13,7 @@ p{
     font-size: 24px;
 }
 
-form{
-    text-align: center;
-}
 
-
-input{
-    width: 80%;
-    height: 40px;
-    margin: 20px;
-}
 
 button{
     width: 80%;
@@ -33,15 +25,15 @@ button{
 
 
 
-.login{
+.frase{
 
 width: 85%;
-background-color: rgb(240, 240, 240);
-padding: 50px;
-border-radius: 10px;
-
+background-color: rgb(255, 255, 255);
+text-align: center;
 
 }
+
+
 
 button:hover {
     background-color: rgb(71, 1, 1); /* Alterando a cor de fundo quando o mouse está sobre o botão */
