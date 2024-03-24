@@ -13,7 +13,6 @@
 }
 
 .geral{
-    background-color: rgb(241, 241, 241);
     border-radius: 10px;
 }
 
@@ -22,7 +21,6 @@ h1{
     font-size: 80px;
     color: red;
     font-weight: bold;
-    background-color: rgb(185, 185, 185);
     border-radius: 10px;
 }
 

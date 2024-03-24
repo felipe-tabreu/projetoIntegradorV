@@ -10,13 +10,16 @@ import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { FraseLoginComponent } from './frase-login/frase-login.component';
 import { TelaLoginComponent } from './Telas/tela-login/tela-login.component';
 import { FormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+
 
 // Definição das rotas
 const routes: Routes = [
+  { path: 'nav-bar', component: NavBarComponent },
   { path: 'cadastro-cliente', component: CadastroClienteComponent },
   { path: 'cadastro-veiculo', component: CadastroVeiculoComponent },
-  { path: '', redirectTo: '/cadastro-cliente', pathMatch: 'full' },
-  { path: '**', redirectTo: '/cadastro-cliente' }
+  { path: '', redirectTo: '/tela-login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/tela-login' }
 ];
 
 @NgModule({
@@ -27,6 +30,7 @@ const routes: Routes = [
     FraseLoginComponent,
     TelaLoginComponent,
     CadastroVeiculoComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
