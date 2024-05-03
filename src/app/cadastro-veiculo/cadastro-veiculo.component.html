@@ -1,15 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-<div class="geral">
+<div class="formularioVeiculo">
 
 
-<form class="cadVeiculo">
-
-    <h1><b>Cadastro de Veículos</b></h1>
+<h1>CADASTRO DE VEICULOS</h1> 
 
 
-<input type="number" placeholder="CPF" maxlength="11">
 
-    <br>
+<form action="">
+
+<input type="text"  placeholder="CPF">
+
 
 <input type="text" placeholder="PLACA" maxlength="7"> <br>
 
@@ -17,55 +25,48 @@
 <div class="selecs">
 
     <!-- Campo de seleção para a marca do veículo -->
-    <label for="marca">MARCA:</label>
+
     <select id="marca" name="marca" [(ngModel)]="selectedMarca" (change)="atualizarModelos()">
         <option value="" selected disabled>Selecione a marca</option>
         <option value="Fiat">Fiat</option>
         <option value="Chevrolet">Chevrolet</option>
-    </select><br><br>
+    </select>
 
     <!-- Campo de seleção para o modelo do veículo -->
-    <label for="modelo">MODELO:</label>
+
     <select id="modelo" name="modelo" [(ngModel)]="selectedModelo">
         <option value="" selected disabled>Selecione o modelo</option>
         <option *ngFor="let modelo of modelos" [value]="modelo">{{ modelo }}</option>
-    </select><br><br>
+    </select>
 
 
-    <label for="ano">ANO:</label>
-    <select id="ano" name="ano" >
-        <option value="" selected disabled>Selecione a marca</option>
-        <option value="2010">2010</option>
-        <option value="2011">2011</option>
-        <option value="2012">2012</option>
-        <option value="2013">2013</option>
-        <option value="2014">2014</option>
-        <option value="2015">2015</option>
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
-        <option value="2018">2018</option>
-        <option value="2019">2019</option>
-        <option value="2020">2020</option>
-        <option value="2021">2021</option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
-        <option value="2024">2024</option>   
 
-    </select><br><br>
+    <select id="ano" name="ano">
+        <option value="" selected disabled>Selecione o ano</option>
+        <option *ngFor="let year of anos" [value]="year">{{ year }}</option>
+    </select>
+    
 
-
-    <label for="cor">COR:</label>
     <select id="cor" name="cor" >
-        <option value="" selected disabled>Selecione a marca</option>
-        <option value="preto">Preto</option>
-        <option value="branco">Branco</option>
-        <option value="prata">Prata</option>
-    </select><br><br>
+        <option value=" "selected disabled>Selecione a cor</option>
+        <option  value="Preto" style="background-color: black; color: white;">preto</option>
+        <option value="Branco" style="background-color: white; color: black;">branco</option>
+        <option value="Prata" style="background-color: rgb(182, 182, 182); color: black;">prata</option>
+        <option value="Prata" style="background-color: red; color: white;">vermelho</option>
+    </select>
 
 </div>
 
 
     <button><b>Cadastrar</b></button>
-    <br><br><br>
+
 </form>
+
+
 </div>
+
+
+
+
+</body>
+</html>

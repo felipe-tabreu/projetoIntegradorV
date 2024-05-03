@@ -7,28 +7,17 @@
 </head>
 <body>
 
+<div class="formularioCliente">
+<h1>CADASTRO DE CLIENTE</h1>
+<form>
+    <input [(ngModel)]="cliente.nome" name="nome" id="nome" placeholder="Nome" type="text" required>
+    <input [(ngModel)]="cliente.endereco" name="endereco" id="endereco" placeholder="Endereço" type="text">
+    <input [(ngModel)]="cliente.telefone" name="telefone" id="telefone" placeholder="Telefone" type="tel" required>
+    <input [(ngModel)]="cliente.cpf" name="cpf" id="cpf" placeholder="CPF" type="text" required>
+    <input [(ngModel)]="cliente.email" name="email" id="email" placeholder="Email" type="email">
+    <button type="submit" (click)="CadastrarCliente()">Cadastrar</button>
+</form>
+</div>
 
-
-    <h1><b>Cadastro de Clientes</b></h1>
-    <form>
-        <input placeholder="Nome" type="text" id="nome" name="nome" required><br><br>
-
-
-        <input placeholder="Endereço" id="endereco" name="endereco" required><br><br>
-
-
-        <input placeholder="Telefone" type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required><br><br>
-
-
-        <input placeholder="CPF" type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required><br><br>
-
-
-        <input placeholder="Email" type="email" id="email" name="email" required><br><br>
-
-        <button (click)="concluirCadastroCliente()">Concluir Cadastro</button>
-
-
-
-    </form>
 </body>
 </html>
