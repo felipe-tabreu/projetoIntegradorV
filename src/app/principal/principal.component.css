@@ -1,1 +1,6 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+
+.botao{
+    background-color: aliceblue; width: 240px; height: 280px; border-radius: 10px; text-align: center; overflow: hidden; margin: 20px; margin: 60px; 
+}

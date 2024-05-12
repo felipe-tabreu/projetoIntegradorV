@@ -11,7 +11,7 @@ body {
     text-align: center;
     background-color: white;
     width: 70%;
-    height: 800px;
+    height: 750px;
     border-radius: 20px;
 }
 
@@ -59,6 +59,7 @@ button {
     border-radius: 7px;
     border-color: rgb(255, 255, 255);
     transition: background-color 0.3s ease; /* Adicionando efeito de transição */
+    margin: 100px;
 }
 
 button:hover {

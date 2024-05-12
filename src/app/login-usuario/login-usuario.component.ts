@@ -45,7 +45,7 @@ export class LoginUsuarioComponent {
     const usuario = this.usuarios.find(u => u.cpf === this.cpf && u.senha === this.senha);
     if (usuario) {
       this.authService.setUsuario(usuario); // Armazena o usuário logado no serviço de autenticação
-      this.router.navigate(['/nav-bar']); // Redireciona para a rota da NavBar se o login for bem-sucedido
+      this.router.navigate(['/principal']); // Redireciona para a rota da NavBar se o login for bem-sucedido
     } else {
       alert('CPF ou senha incorretos');
     }
